@@ -76,6 +76,8 @@ Vagrant.configure("2") do |config|
 		sudo apt-get install -y mongodb
 		sudo systemctl start mongodb
 		sudo systemctl enable mongodb
+		sudo sed -i 's/bind_ip = 127.0.0.1/#bind_ip = 127.0.0.1/' /etc/mongodb.conf
+		sudo systemctl restart mongodb
 	SHELL
   end
 end
