@@ -1,9 +1,11 @@
 {
     "name": "DevOpsE-Degree",
-    "version": "0.0.1",
+	"version": "0.0.1",
+	"description": "",
     "scripts": {
         "start": "node server.js"
-    },
+	},
+	"license": "ISC",
     "dependencies": {
         "express": "^4.15.4",
         "body-parser": "^1.15.2",
