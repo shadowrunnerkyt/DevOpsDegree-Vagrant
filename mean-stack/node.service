@@ -1,0 +1,13 @@
+[Unit]
+Description=NodeJS application server
+
+[Service]
+ExecStart=/opt/app/server.js
+Restart=always
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin
+WorkingDirectory=/opt/app
+
+[Install]
+WantedBy=multi-user.target
