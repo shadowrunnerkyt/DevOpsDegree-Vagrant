@@ -7,7 +7,7 @@ fi
 echo "Installing the EPEL repository"
 yum -y install epel-release
 echo "Install Node.js"
-curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
+# curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
 yum -y install nodejs
 echo "Deploying the application files"
 cp -r /vagrant/appfiles/* $appdir/
